@@ -1,5 +1,6 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+// (使用express.Router()方法创建了一个新的子路由)
+const router = express.Router();
 // 导入用户的模型
 const UserModel = require("../../models/UserModel");
 // 导入md5

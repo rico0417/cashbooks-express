@@ -6,6 +6,7 @@ const AccountModel = require("../../models/AccountModel");
 const checkLoginMiddleware = require('../../middlewares/checkLoginMiddleware');
 
 // 创建路由对象
+// (使用express.Router()方法创建了一个新的子路由)
 const router = express.Router();
 
 /**
