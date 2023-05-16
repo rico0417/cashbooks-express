@@ -46,8 +46,6 @@ router.post("/account", checkTokenMiddleware, (req, res) => {
     time: moment(req.body.time).toDate(),
   })
     .then((result) => {
-      // 成功提醒
-      // res.render('success', { m sg: '添加成功哦~~~', url: '/account' })
       res.json({
         code: "0000",
         msg: "创建成功",

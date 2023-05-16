@@ -24,6 +24,7 @@ router.get("/account", checkLoginMiddleware, function (req, res, next) {
     .sort({ time: -1 })
     .exec()
     .then((result) => {
+      // 返回一个HTML超文本
       res.render("list", { accounts: result, moment: moment });
     })
     .catch((err) => {

@@ -27,6 +27,7 @@ let AccountSchema = new mongoose.Schema({
 });
 
 //创建模型对象  对文档操作的封装对象
+// 模型相关方法文档地址：https://mongoosejs.com/docs/api/model.html
 let AccountModel = mongoose.model('accounts', AccountSchema);
 
 //暴露模型对象
